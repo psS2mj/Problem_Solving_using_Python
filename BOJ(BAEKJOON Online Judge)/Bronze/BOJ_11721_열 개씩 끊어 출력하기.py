@@ -4,11 +4,7 @@
 
 import sys
 input = sys.stdin.readline()
-len = len(input)
-if len < 10:
-    print(input)
-else:
-    len = len//10
-    for i in range(len):
-        print(input[i*10:i*10+10])
-    print(input[len*10:])
+len = len(input)//10
+for i in range(len):
+    print(input[i*10:i*10+10])
+print(input[len*10:])
